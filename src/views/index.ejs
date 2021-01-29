@@ -10,6 +10,19 @@
 <body>
     <%- include('partials/header') %>
     <h1>Home Page</h1>
+    <div class="container-flud px-lg-5" id="app">
+        <div class="row" v-for="todo in todos">
+            <div class="card shadow col-lg-12 col px-lg-5">
+                <div class="card-body">
+                    <span v-if="todo.isDone">✅</span>
+                    <span v-else>❌</span>
+                    {{todo.id}} : {{todo.title}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <%- include('partials/common') %>
     <%- include('partials/footer') %>
 </body>
 
