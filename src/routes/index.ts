@@ -1,4 +1,5 @@
 import * as express from "express";
+import * as api from "./api";
 
 
 export const register = (app: express.Application) => {
@@ -11,4 +12,6 @@ export const register = (app: express.Application) => {
     app.get("/about", (req: any, res) => {
         res.render("about");
     });
+
+    api.register(app);
 };

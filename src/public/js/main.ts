@@ -17,9 +17,9 @@ new Vue({ // eslint-disable-line no-new
     mounted() {
         let todos: BO.Todo[] = [
             { "id": 1, "title": "Integrate Vue.js", "isDone": true },
-            { "id": 2, "title": "Refactor this later", "isDone": false },
-            { "id": 3, "title": "Write an API", "isDone": false },
-            { "id": 5, "title": "Get data from a database", "isDone": false },
+            { "id": 2, "title": "Refactor this later", "isDone": true },
+            { "id": 3, "title": "Write an API", "isDone": true },
+            { "id": 4, "title": "Get data from a database", "isDone": false },
         ];
         (<BO.Todo[]>this.todos) = todos;
     }
